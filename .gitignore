@@ -1,0 +1,28 @@
+# Dependencias y build
+node_modules
+dist
+dist-ssr
+coverage
+.system_generated
+
+# Archivos de sistema y entorno
+.vscode/
+.DS_Store
+*.local
+*.log
+
+# Materiales de referencia y temporales del curso
+scratch/
+contextos/
+pauta_ava/
+*.zip
+01_Rubrica*
+02_*
+06_*
+07_*
+AVA_*
+para enviar/
+
+# Scripts auxiliares locales
+generar_manual_estudio_pdf.py
+empaquetar_entrega.ps1

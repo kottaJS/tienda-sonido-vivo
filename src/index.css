@@ -1,0 +1,115 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  --color-marca: #d9381e;
+  --color-marca-oscuro: #b32a13;
+  --color-fondo: #f8f9fa;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: #212529;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.bg-sonido-vivo {
+  background-color: #1a1a1a !important;
+}
+
+.btn-marca {
+  background-color: var(--color-marca);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-marca:hover {
+  background-color: var(--color-marca-oscuro);
+  color: #ffffff;
+}
+
+.badge-marca {
+  background-color: var(--color-marca);
+}
+
+.card-producto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #dee2e6;
+}
+
+.card-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.img-producto-placeholder {
+  height: 180px;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 3.5rem;
+}
+
+.banner-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.mapa-contenedor {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ced4da;
+}
+
+@media (max-width: 576px) {
+  .banner-hero {
+    padding: 2.5rem 1rem !important;
+  }
+  .banner-hero h1 {
+    font-size: 2.1rem !important;
+  }
+  .banner-hero p.lead {
+    font-size: 0.95rem !important;
+  }
+  .banner-hero .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+  .mapa-contenedor {
+    height: 300px;
+  }
+}
+
